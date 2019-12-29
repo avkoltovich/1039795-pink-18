@@ -1,5 +1,21 @@
-@mixin font($weight) {
+@mixin font($weight, $size) {
   font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-style: $style;
+  font-size: ($size + px);
+  font-weight: $weight;
+  font-style: normal;
+}
+
+@mixin btnReset {
+  padding-right: 0;
+  padding-left: 0;
+
+  background-color: transparent;
+  border: none;
+}
+
+@mixin listReset {
+  padding-left: 0;
+  margin-top: 0;
+
+  list-style: none;
 }

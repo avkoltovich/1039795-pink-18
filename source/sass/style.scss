@@ -1,7 +1,10 @@
 @import "visually-hidden";
 @import "display-none";
+@import "../../node_modules/normalize.css/normalize";
 @import "box-sizing";
 @import "font-face";
 @import "variables";
 @import "mixin";
 @import "blocks/header";
+@import "blocks/main";
+@import "blocks/download";
