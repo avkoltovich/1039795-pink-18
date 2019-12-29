@@ -73,7 +73,7 @@
   background-color: $dark;
 
   &--closed {
-    height: 66px;
+    min-height: 66px;
 
     background-color: rgba(0, 0, 0, 0.3);
 
@@ -110,11 +110,62 @@
 
   .header {
     &--closed {
-      height: 110px;
+      min-height: 110px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .header__logo {
+    padding-left: 0;
+    margin-right: 173px;
+  }
 
+  .header__nav {
+    width: auto;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__list {
+    display: flex;
+    width: auto;
+  }
+
+  .header__item {
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .header__link {
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1;
+
+    border-top: none;
+    box-shadow: none;
+  }
+
+  .header {
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: calc(100% - 1200px + 130px);
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    &--closed {
+      .header__btn {
+        display: none;
+      }
+
+      .header__nav {
+        display: block;
+      }
+    }
+  }
 }
