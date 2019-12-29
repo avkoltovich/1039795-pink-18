@@ -10,34 +10,33 @@
 
 <body>
   <header class="header">
-    <a class="header__logo">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-        <img src="img/logo-pink-white-mobile.svg" width="147" height="40" alt="PINK">
-      </picture>
-    </a>
-    <button class="header__btn" type="menu"></button>
-    <nav class="header__nav">
-      <ul class="header__list" aria-label="Навигация">
-        <li class="header__item">
-          <a class="header__link">Главная</a>
-        </li>
-        <li class="header__item">
-          <a href="photo.html" class="header__link">Фотографии</a>
-        </li>
-        <li class="header__item">
-          <a href="form.html" class="header__link">Конкурс</a>
-        </li>
-        <li class="header__item">
-          <a href="https://htmlacademy.ru/" class="header__link">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main">
-    <h1 class="visually-hidden">Мобильное приложение PINK</h1>
-    <section class="main__download download">
+    <div class="header__wrapper">
+      <a class="header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" width="147" height="40" alt="PINK">
+        </picture>
+      </a>
+      <button class="header__btn" type="button"></button>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link">Главная</a>
+          </li>
+          <li class="header__item">
+            <a href="photo.html" class="header__link">Фотографии</a>
+          </li>
+          <li class="header__item">
+            <a href="form.html" class="header__link">Конкурс</a>
+          </li>
+          <li class="header__item">
+            <a href="https://htmlacademy.ru/" class="header__link">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="header__download download">
       <h2 class="download__heading">Взгляните на жизнь иначе!</h2>
       <picture>
         <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png 2x">
@@ -67,6 +66,9 @@
         Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </p>
     </section>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Мобильное приложение PINK</h1>
     <section class="main__offer offer">
       <h2 class="visually-hidden">Наше предложение</h2>
       <p class="offer__text">
@@ -200,11 +202,8 @@
         <tr class="tariff__row">
           <td class="tariff__cell">Комментарии</td>
           <td class="tariff__cell"><span class="visually-hidden">Нет</span></td>
-          </td>
           <td class="tariff__cell"><span class="visually-hidden">Нет</span></td>
-          </td>
           <td class="tariff__cell"><span class="visually-hidden">Да</span></td>
-          </td>
         </tr>
       </table>
       <div class="tariff__slide slide">

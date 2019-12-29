@@ -10,33 +10,35 @@
 
 <body>
   <header class="header">
-    <a class="header__logo">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-        <img src="img/logo-pink-white-mobile.svg" width="147" height="40" alt="PINK">
-      </picture>
-    </a>
-    <button class="header__btn" type="menu"></button>
-    <nav class="header__nav">
-      <ul class="header__list" aria-label="Навигация">
-        <li class="header__item">
-          <a href="index.html" class="header__link">Главная</a>
-        </li>
-        <li class="header__item">
-          <a href="photo.html" class="header__link">Фотографии</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link">Конкурс</a>
-        </li>
-        <li class="header__item">
-          <a href="https://htmlacademy.ru/" class="header__link">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrapper">
+      <a class="header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" width="147" height="40" alt="PINK">
+        </picture>
+      </a>
+      <button class="header__btn" type="button"></button>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="index.html" class="header__link">Главная</a>
+          </li>
+          <li class="header__item">
+            <a href="photo.html" class="header__link">Фотографии</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link">Конкурс</a>
+          </li>
+          <li class="header__item">
+            <a href="https://htmlacademy.ru/" class="header__link">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="header__title">Фотографии пользователей</h1>
   </header>
   <main class="main">
-    <h1 class="main__heading">Фотографии пользователей</h1>
     <section class="main__form form">
       <h2 class="visually-hidden">Форма отправки</h2>
       <p class="form__text">
