@@ -50,6 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .review {
+    min-height: 0;
     padding-top: 18px;
   }
 
@@ -107,6 +108,10 @@
     &:active {
       opacity: 0.1;
     }
+  }
+
+  .review__list {
+    margin-bottom: 0;
   }
 
   .review__blockquote {
