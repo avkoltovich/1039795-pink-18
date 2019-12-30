@@ -1,0 +1,160 @@
+.contact {
+  position: relative;
+
+  padding-top: 44px;
+
+  background-color: #ffffff;
+
+  &::after {
+    position: absolute;
+    bottom: -76px;
+    z-index: 0;
+
+    width: 100%;
+    height: 123px;
+    content: "";
+
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: 1200px 123px;
+    background-position: center;
+  }
+}
+
+.contact__heading {
+  display: block;
+  margin-bottom: 38px;
+
+  @include font(300, 24);
+  text-align: center;
+  color: $dark;
+}
+
+.contact__list {
+  position: relative;
+  z-index: 1;
+
+  @include listReset;
+  margin-bottom: 0;
+}
+
+.contact__link {
+  text-decoration: none;
+}
+
+.contact__link-title {
+  display: block;
+  margin-bottom: 4px;
+
+  @include font(700, 18);
+  text-align: center;
+  color: $dark;
+}
+
+.contact__link-text {
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 24px;
+
+  @include font(300, 24);
+  text-align: center;
+  color: $lipstick;
+}
+
+li:last-child {
+  & .contact__link-text {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contact {
+    &::after {
+      bottom: -100px;
+    }
+  }
+
+  .contact__heading {
+    max-width: 370px;
+    margin-right: auto;
+    margin-bottom: 46px;
+    margin-left: auto;
+
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .contact__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 560px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contact__item:last-child {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contact__item:first-child {
+    padding-left: 16px;
+  }
+
+  .contact__link-text {
+    max-width: 240px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 48px;
+  }
+
+  .contact__link-title {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact {
+    padding-top: 90px;
+
+    &::after {
+      bottom: -123px;
+
+      background-size: 2400px 200px;
+      background-position: bottom;
+    }
+  }
+
+  .contact__heading {
+    max-width: 470px;
+    margin-bottom: 58px;
+
+    font-size: 50px;
+  }
+
+  .contact__list {
+    max-width: 880px;
+  }
+
+  .contact__item:first-child {
+    padding-left: 18px;
+  }
+
+  .contact__item:last-child {
+    padding-left: 16px;
+  }
+
+  .contact__item:nth-child(2) {
+    order: 1;
+  }
+
+  .contact__link-title {
+    margin-bottom: 26px;
+  }
+
+  .contact__link-text {
+    margin-bottom: 0;
+  }
+}
