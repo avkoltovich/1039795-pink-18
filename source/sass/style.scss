@@ -9,8 +9,10 @@ body {
 @import "font-face";
 @import "variables";
 @import "mixin";
+@import "blocks/slide";
 @import "blocks/header";
 @import "blocks/main";
 @import "blocks/download";
 @import "blocks/offer";
 @import "blocks/research";
+@import "blocks/review";

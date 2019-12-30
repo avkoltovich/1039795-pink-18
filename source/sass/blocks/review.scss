@@ -1,0 +1,149 @@
+.review {
+  min-height: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.review__btn {
+  display: none;
+}
+
+.review__list {
+  @include listReset;
+  margin-bottom: 34px;
+}
+
+.review__blockquote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.review__author {
+  order: -1;
+  margin-bottom: 13px;
+
+  @include font(700, 18);
+  line-height: 1.67;
+  text-align: center;
+  color: #000000;
+}
+
+.review__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include font(400, 14);
+  line-height: 2.14;
+  text-align: center;
+  color: $dark;
+}
+
+.review__footer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    padding-top: 18px;
+  }
+
+  .review__list {
+    margin-bottom: 40px;
+  }
+
+  .review__text {
+    max-width: 690px;
+    margin-bottom: 33px;
+
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .review__author {
+    order: inherit;
+    margin-bottom: 8px;
+
+    font-size: 20px;
+  }
+
+  .review__footer {
+    display: block;
+
+    @include font(400, 14);
+    text-align: center;
+    color: $dark;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 186px;
+    padding-right: calc(50% - 600px + 130px);
+    padding-left: calc(50% - 600px + 130px);
+  }
+
+  .review__btn {
+    display: block;
+    width: 22px;
+    height: 41px;
+    margin-top: 28px;
+    @include btnReset;
+
+    opacity: 0.3;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .review__blockquote {
+    padding-top: 0;
+  }
+
+  .review__text {
+    position: relative;
+
+    margin-bottom: 31px;
+
+    &::before {
+      position: absolute;
+      top: -113px;
+      left: 309px;
+
+      width: 80px;
+      height: 63px;
+      content: "";
+
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .review__author {
+    margin-bottom: 2px;
+
+    font-size: 24px;
+  }
+
+  .review__footer {
+    font-size: 18px;
+  }
+
+  .review__slide {
+    display: none;
+  }
+}

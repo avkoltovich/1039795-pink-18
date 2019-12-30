@@ -1,0 +1,27 @@
+.slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slide__marker {
+  display: block;
+  box-sizing: content-box;
+  width: 6px;
+  height: 6px;
+  margin-right: 13px;
+
+  border: solid 3px #ffffff;
+  border-radius: 50%;
+  background-color: $dark;
+  opacity: 0.3;
+
+  &--current {
+    border: solid 3px $dark;
+    background-color: #ffffff;
+    opacity: 1;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
