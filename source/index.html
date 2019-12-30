@@ -6,6 +6,7 @@
   <title>Главная. Pink.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
     </symbol>
   </svg>
   <header class="header">
-    <div class="header__container">
+    <div class="header__menu">
       <a class="header__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
@@ -99,17 +100,28 @@
         <strong>Устали от серости мегаполиса?</strong>
         <strong>Нам есть, что вам предложить!</strong>
       </p>
-      <dl class="offer__advantages">
-        <dt class="offer__term">Поднимает настроение</dt>
-        <dd class="offer__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-          кликов!</dd>
-        <dt class="offer__term">Меняет мир вокруг</dt>
-        <dd class="offer__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-          эффект</dd>
-        <dt class="offer__term">Заводит новых друзей</dt>
-        <dd class="offer__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-        </dd>
-      </dl>
+      <ul class="offer__advantages">
+        <li>
+          <h3 class="offer__term">Поднимает настроение</h3>
+          <p class="offer__description">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько кликов!
+          </p>
+        </li>
+        <li>
+          <h3 class="offer__term">Меняет мир вокруг</h3>
+          <p class="offer__description">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+            усилить&nbsp;эффект
+          </p>
+        </li>
+        <li>
+          <h3 class="offer__term">Заводит новых друзей</h3>
+          <p class="offer__description">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </li>
+      </ul>
       <ul class="offer__list">
         <li class="offer__item">
           <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292"
@@ -299,6 +311,7 @@
       </a>
     </p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

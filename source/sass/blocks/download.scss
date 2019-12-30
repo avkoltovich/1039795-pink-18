@@ -117,7 +117,7 @@
   .download__heading {
     max-width: 186px;
     margin-bottom: 32px;
-    margin-left: 74px;
+    margin-left: calc(50% - 330px + 74px);
 
     font-size: 40px;
     line-height: 1.2;
@@ -172,6 +172,45 @@
 
 @media (min-width: $desktop-width) {
   .download {
+    min-height: 854px;
+    padding-top: 194px;
+
     background: none;
+  }
+
+  .download__heading {
+    max-width: 235px;
+    margin-bottom: 52px;
+    margin-left: calc(50% - 600px + 162px);
+
+    font-size: 50px;
+  }
+
+  .download__img {
+    right: calc(50% - 600px + 4px);
+
+    & img {
+      width: 1050px;
+      height: 645px;
+    }
+  }
+
+  .download__bg-wrap {
+    padding-right: 0;
+    padding-left: calc(50% - 600px + 110px);
+  }
+
+  .download__link {
+    &--download {
+      width: 300px;
+      margin-bottom: 66px;
+      margin-left: 20px;
+
+      font-size: 21px;
+    }
+  }
+
+  .download__list {
+    margin-bottom: 56px;
   }
 }
