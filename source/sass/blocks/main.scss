@@ -1,3 +1,10 @@
 
+.main__research {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .main__research {
+    display: block;
+  }
 }

@@ -1,0 +1,96 @@
+.research {
+  min-height: 390px;
+  padding-top: 66px;
+  padding-left: 50%;
+}
+
+.research__heading {
+  position: relative;
+
+  max-width: 200px;
+  margin-bottom: 10px;
+
+  @include font(700, 30);
+  line-height: 1.2;
+
+  color: #000000;
+
+  &::before {
+    position: absolute;
+    top: -37px;
+    left: -309px;
+
+    width: 238px;
+    height: 276px;
+    content: "24";
+
+    @include font(700, 96);
+    line-height: 300px;
+    text-align: center;
+    color: $lipstick;
+
+    background-image: url("../img/icon-editor-diagram-fill.svg"),
+      url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: center top 56px, center;
+    background-size: 202px 202px, contain;
+  }
+}
+
+.research__text {
+  max-width: 300px;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @include font(400, 14);
+  line-height: 1.71;
+  color: $dark;
+}
+
+.research__link {
+  @include font(400, 14);
+  line-height: 1.71;
+  color: $lipstick;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    min-height: 440px;
+    padding-top: 88px;
+    padding-left: calc(50% - 600px + 496px);
+
+    background-color: $light;
+  }
+
+  .research__heading {
+    max-width: none;
+    margin-bottom: 21px;
+
+    font-size: 30px;
+
+    &::before {
+      top: -90px;
+      left: -365px;
+
+      width: 298px;
+      height: 345px;
+
+      font-size: 120px;
+      line-height: 376px;
+
+      background-position: center top 69px, center;
+      background-size: 253px 253px, contain;
+    }
+  }
+
+  .research__text {
+    max-width: 535px;
+    margin-bottom: 29px;
+
+    font-size: 18px;
+  }
+
+  .research__link {
+    font-size: 18px;
+  }
+}
