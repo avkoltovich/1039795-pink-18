@@ -2,6 +2,16 @@
   display: none;
 }
 
+.main__contact {
+  position: relative;
+  z-index: 2;
+}
+
+.main__map {
+  position: relative;
+  z-index: 1;
+}
+
 @media (min-width: $tablet-width) {
   .main__research {
     display: block;
